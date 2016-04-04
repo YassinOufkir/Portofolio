@@ -1,8 +1,13 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
-    	
+	head
+		include head.jade	
+	body
+	block content
+		.container
+			.header.column.three
+				include header.jade
+			.wrapper.column.six
+				include wrapper.jade
+			.footer.column.full
+				include footer.jade
